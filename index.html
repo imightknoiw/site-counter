@@ -5,5 +5,5 @@
 fhsh.src = "//freehostedscripts.net/ocount.php?site="+fhs_id_h+"&name=visits on this page! What a waste.&a=1";
 document.head.appendChild(fhsh);document.write("<span id='h_"+fhs_id_h+"'></span>");
 document.title = document.getElementById('h_'+fhs_id_h).innerHTML;
-window.onload = setInterval(function(){document.getElementByTagName("a").remove()}, 1000); 
+window.onload = setInterval(function(){document.getElementsByTagName("a")[0].remove()}, 1000); 
 </script>
